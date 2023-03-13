@@ -3,20 +3,36 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
-    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
-    <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
-      }
-    </style>
+    <title>&lt;progress-bar > Demo</title>
+    <script type="module" src="../src/progress-bar.ts"></script>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <div
+      style="
+        position: relative;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      "
+    >
+      <progress-bar percentage="60"></progress-bar>
+      <progress-bar
+        percentage="80"
+        style="
+          --wc-vc-progress-bar-width: 350px;
+          --wc-vc-progress-bar-height: 5px;
+        "
+      ></progress-bar>
+      <progress-bar
+        percentage="50"
+        style="
+          --wc-vc-progress-bar-width: 100%;
+          --wc-vc-progress-bar-height: 6px;
+          --wc-vc-progress-bar-start-color: #00f;
+          --wc-vc-progress-bar-end-color: #0f0;
+        "
+      ></progress-bar>
+    </div>
   </body>
 </html>

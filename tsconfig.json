@@ -26,8 +26,13 @@
         "name": "ts-lit-plugin",
         "strict": true
       }
-    ]
+    ],
+    "useDefineForClassFields": false
   },
-  "include": ["src/**/*.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/test/progress-bar_test.js",
+    "src/test/progress-bar_test.js"
+  ],
   "exclude": []
 }

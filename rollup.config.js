@@ -10,9 +10,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'my-element.js',
+  input: 'progress-bar.js',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'progress-bar.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {
