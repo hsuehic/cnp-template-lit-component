@@ -51,3 +51,30 @@ npm i wc-progress-bar
   ```html
   <progress-bar percentage="60"></progress-bar>
   ```
+
+### Memo
+
+TSConfig: `useDefineForClassFields`
+
+- Dev Server(Esbuild)
+
+```js
+{
+  // target before es2020, such as es
+  constructor() {
+    super();
+    this.props= value;
+  }
+}
+
+```
+
+- Storybook(Babel): https://github.com/storybookjs/storybook/issues/12578
+
+```js
+// target later than 2022
+{
+  @observable()
+  percentage = 0;
+}
+```

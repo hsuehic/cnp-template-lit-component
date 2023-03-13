@@ -1,6 +1,10 @@
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
+export interface ProgressBarProps {
+  percentage: number;
+}
+
 /**
  * Component for display progress
  *
@@ -8,8 +12,9 @@ import {customElement, property} from 'lit/decorators.js';
  */
 @customElement('progress-bar')
 export class ProgressBar extends LitElement {
-  constructor() {
+  constructor(props?: ProgressBarProps) {
     super();
+    this.percentage = props?.percentage ?? 0;
   }
   /**
    * Progress

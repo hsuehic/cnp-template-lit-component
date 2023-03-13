@@ -9,3 +9,4 @@ progress-bar.d.ts
 progress-bar.d.ts.map
 # only generated for size check
 progress-bar.bundled.js
+/src/stories/
