@@ -10,3 +10,4 @@ progress-bar.d.ts.map
 # only generated for size check
 progress-bar.bundled.js
 /src/stories/
+/storybook-static/
