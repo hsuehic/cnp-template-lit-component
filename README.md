@@ -1,8 +1,6 @@
 # Progress Bar Web Component powered by Lit
 
-A Web Component for displaying progress.
-
-![Preview](./preview.png)
+A Web Component for displaying progress. Please check [Demos](https://hsuehic.github.io/wc-progressbar/).
 
 ## Installation
 

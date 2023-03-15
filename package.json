@@ -31,7 +31,8 @@
     "test:prod:watch": "MODE=prod wtr --watch",
     "checksize": "rollup -c ; cat progress-bar.bundled.js | gzip -9 | wc -c ; rm progress-bar.bundled.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./static"
+    "build-storybook": "MODE=production build-storybook -o ./static",
+    "deploy-storybook": "MODE=production storybook-to-ghpages"
   },
   "keywords": [
     "web-components",
@@ -55,8 +56,10 @@
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
     "@storybook/builder-webpack4": "^6.5.16",
     "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/web-components": "^6.5.16",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
@@ -78,7 +81,8 @@
     "rollup-plugin-summary": "^1.4.3",
     "rollup-plugin-terser": "^7.0.2",
     "storybook-design-token": "^2.9.0",
-    "typescript": "~4.7.4"
+    "typescript": "~4.7.4",
+    "vite": "^4.1.4"
   },
   "customElements": "custom-elements.json"
 }

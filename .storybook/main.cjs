@@ -1,3 +1,5 @@
+const {mergeConfig} = require('vite');
+
 process.env.DESIGN_TOKEN_GLOB = '**/*.tokens.{css,scss,less,svg}';
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -26,5 +28,11 @@ module.exports = {
   },
   core: {
     builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+  },
+
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      base: process.env.MODE === 'production' ? '/wc-progressbar/' : '/',
+    });
   },
 };
