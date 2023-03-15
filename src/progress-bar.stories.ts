@@ -8,6 +8,12 @@ export default {
   argTypes: {
     percentage: {control: 'number'},
   },
+
+  parameters: {
+    designToken: {
+      defaultTab: 'ProgressBar',
+    },
+  },
 };
 
 interface Story<T> {

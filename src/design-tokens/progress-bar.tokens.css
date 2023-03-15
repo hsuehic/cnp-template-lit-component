@@ -1,0 +1,19 @@
+:root {
+  /**
+    * @tokens ProgressBar
+    * @presenter Border
+    */
+  --wc-vc-progress-bar-height: 4px;
+  /**
+   * @tokens ProgressBar
+   * @presenter Spacing
+   */
+  --wc-vc-progress-bar-width: 300px;
+
+  /**
+    * @tokens ProgressBar
+    * @presenter Color
+    */
+  --wc-vc-progress-bar-start-color: #eb1717;
+  --wc-vc-progress-bar-end-color: #ffb000;
+}

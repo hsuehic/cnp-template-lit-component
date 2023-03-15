@@ -78,3 +78,6 @@ TSConfig: `useDefineForClassFields`
   percentage = 0;
 }
 ```
+
+- storybook-design-token postcss
+  https://stackoverflow.com/questions/72272219/stylelint-gives-error-class-extends-value-undefined-is-not-a-constructor-or-nul

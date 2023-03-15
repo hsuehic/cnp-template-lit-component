@@ -1,6 +1,16 @@
+process.env.DESIGN_TOKEN_GLOB = '**/*.tokens.{css,scss,less,svg}';
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    {
+      name: 'storybook-design-token',
+      options: {
+        DESIGN_TOKEN_GLOB: '**/*.tokens.{css,scss,less,svg}',
+      },
+    },
+  ],
   framework: '@storybook/web-components',
   babel: async (options) => {
     Object.assign(
