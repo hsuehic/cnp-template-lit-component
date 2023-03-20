@@ -32,6 +32,7 @@
     "checksize": "rollup -c ; cat progress-bar.bundled.js | gzip -9 | wc -c ; rm progress-bar.bundled.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "MODE=production build-storybook -o ./static",
+    "build-storybook:gitlab": "MODE=gitlab build-storybook -o ./public",
     "deploy-storybook": "MODE=production storybook-to-ghpages"
   },
   "keywords": [

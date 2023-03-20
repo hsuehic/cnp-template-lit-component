@@ -31,8 +31,14 @@ module.exports = {
   },
 
   async viteFinal(config) {
+    let base = '/';
+    if (process.env.MODE === 'production') {
+      base = '/wc-progressbar';
+    } else if (process.env.MODE === 'gitlab') {
+      base = '/promotion/promotion-fe/seller-center/wc-progressbar';
+    }
     return mergeConfig(config, {
-      base: process.env.MODE === 'production' ? '/wc-progressbar/' : '/',
+      base,
     });
   },
 };
