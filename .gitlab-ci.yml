@@ -1,16 +1,16 @@
-image: node:16
+image: harbor.shopeemobile.com/shopee-fe/web-frontend-gitlab-runner:node16.18.1-pnpm6.32.25-sdc0.1.834-chrome107.0.5304.121
 
 stages:
+  - test
   - publish
+
+before_script:
+  - npm install
 
 pages:
   stage: publish
-  cache:
-    paths:
-    - node_modules/
 
   script:
-    - npm install
     - npm run build-storybook:gitlab
   artifacts:
     paths:
@@ -20,3 +20,10 @@ pages:
     - tags 
   except:
     - branches
+
+test:
+  stage: test
+  script:
+    - npm run test
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'

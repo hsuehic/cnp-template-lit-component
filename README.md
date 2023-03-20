@@ -68,6 +68,8 @@ TSConfig: `useDefineForClassFields`
 ```
 
 - Storybook(Babel): https://github.com/storybookjs/storybook/issues/12578
+  
+  The sequence of the decorator matters.
 
 ```js
 // target later than 2022
@@ -78,4 +80,5 @@ TSConfig: `useDefineForClassFields`
 ```
 
 - storybook-design-token postcss
+  Need to obviously install the dependencies
   https://stackoverflow.com/questions/72272219/stylelint-gives-error-class-extends-value-undefined-is-not-a-constructor-or-nul
