@@ -11,3 +11,4 @@ progress-bar.d.ts.map
 progress-bar.bundled.js
 /src/stories/
 /storybook-static/
+/public/

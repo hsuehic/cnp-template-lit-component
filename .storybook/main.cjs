@@ -6,12 +6,21 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    // {
+    //   name: '@storybook/addon-storysource',
+    //   options: {
+    //     loaderOptions: {
+    //       injectStoryParameters: false,
+    //     },
+    //   },
+    // },
     {
       name: 'storybook-design-token',
       options: {
         DESIGN_TOKEN_GLOB: '**/*.tokens.{css,scss,less,svg}',
       },
     },
+    '@whitespace/storybook-addon-html',
   ],
   framework: '@storybook/web-components',
   babel: async (options) => {
