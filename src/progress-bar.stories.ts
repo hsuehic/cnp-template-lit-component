@@ -1,4 +1,6 @@
-import {html, TemplateResult} from 'lit-html';
+import { html, TemplateResult } from 'lit-html';
+import { styleMap } from 'lit/directives/style-map.js';
+
 import './progress-bar';
 import {ProgressBarProps} from './progress-bar';
 
@@ -9,8 +11,8 @@ export default {
     percentage: { control: 'number' },
     ['--wc-vc-progress-bar-start-color']: { control: 'color' },
     ['--wc-vc-progress-bar-end-color']: { control: 'color' },
-    ['--wc-vc-progress-bar-width']: { control: 'number' },
-    ['--wc-vc-progress-bar-height']: { control: 'number' },
+    ['--wc-vc-progress-bar-width']: { control: 'text' },
+    ['--wc-vc-progress-bar-height']: { control: 'text' },
   },
 
   parameters: {
@@ -23,8 +25,8 @@ export default {
 interface ProgressBarDesignTokens {
   ['--wc-vc-progress-bar-start-color']?: string;
   ['--wc-vc-progress-bar-end-color']?: string;
-  ['--wc-vc-progress-bar-width']?: number;
-  ['--wc-vc-progress-bar-height']?: number;
+  ['--wc-vc-progress-bar-width']?: string;
+  ['--wc-vc-progress-bar-height']?: string;
 }
 
 interface Story<T> {
@@ -34,21 +36,9 @@ interface Story<T> {
 }
 type Props = ProgressBarProps & ProgressBarDesignTokens;
 const Template: Story<Props> = ({ percentage, ...designTokens }: Props) => {
-  let s = '';
-  if (designTokens['--wc-vc-progress-bar-end-color']??true != true) {
-    s += `--wc-vc-progress-bar-end-color:${designTokens['--wc-vc-progress-bar-end-color']};`;
-  }
-  if (designTokens['--wc-vc-progress-bar-start-color'] ?? true != true) {
-    s += `--wc-vc-progress-bar-start-color: ${designTokens['--wc-vc-progress-bar-start-color']};`
-  }
-  if (designTokens['--wc-vc-progress-bar-height'] ?? true != true) {
-    s += `--wc-vc-progress-bar-height:${designTokens['--wc-vc-progress-bar-height']}px;`
-  }
-  if (designTokens['--wc-vc-progress-bar-width'] ?? true != true) {
-    s += `--wc-vc-progress-bar-width:${designTokens['--wc-vc-progress-bar-width']}px;`;
-  }
   
-  return html`<progress-bar percentage="${percentage}" style="${s}" />`;  
+  
+  return html`<progress-bar percentage="${percentage}" style=${styleMap(designTokens)} />`;  
 }
 
 export const Default = Template.bind({});
@@ -63,8 +53,8 @@ Default.argTypes = {
 export const CustomDimension = Template.bind({});
 CustomDimension.args = {
   percentage: 60,
-  ['--wc-vc-progress-bar-height']: 6,
-  ['--wc-vc-progress-bar-width']: 400,
+  ['--wc-vc-progress-bar-height']: '6px',
+  ['--wc-vc-progress-bar-width']: '400px',
 };
 
 
