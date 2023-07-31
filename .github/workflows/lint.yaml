@@ -1,0 +1,25 @@
+name: pages
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+
+permissions: write-all
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm run lint
+      

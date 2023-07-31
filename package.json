@@ -2,9 +2,13 @@
   "name": "wc-progress-bar",
   "version": "0.0.1",
   "description": "Progress bar web component",
-  "main": "progress-bar.js",
-  "module": "progress-bar.js",
+  "main": "./dist/progress-bar.js",
+  "module": "./dist/progress-bar.js",
   "type": "module",
+  "files": [
+    "dist",
+    "assets"
+  ],
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
@@ -36,6 +40,7 @@
     "deploy-storybook": "MODE=production storybook-to-ghpages"
   },
   "keywords": [
+    "create npm packages",
     "web-components",
     "lit-element",
     "typescript",
@@ -88,5 +93,8 @@
     "typescript": "~4.7.4",
     "vite": "^4.1.4"
   },
-  "customElements": "custom-elements.json"
+  "customElements": "custom-elements.json",
+  "engines": {
+    "node": "16.18.0"
+  }
 }

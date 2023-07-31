@@ -12,3 +12,4 @@ progress-bar.bundled.js
 /src/stories/
 /storybook-static/
 /public/
+/dist/
