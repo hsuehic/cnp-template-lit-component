@@ -1,18 +1,19 @@
-import { html, TemplateResult } from 'lit-html';
-import { styleMap } from 'lit/directives/style-map.js';
+import {styleMap} from 'lit/directives/style-map.js';
+import {TemplateResult, html} from 'lit-html';
 
 import './progress-bar';
 import {ProgressBarProps} from './progress-bar';
 
+// eslint-disable-next-line import/no-default-export
 export default {
   title: 'Component/ProgressBar',
   component: 'progress-bar',
   argTypes: {
-    percentage: { control: 'number' },
-    ['--wc-vc-progress-bar-start-color']: { control: 'color' },
-    ['--wc-vc-progress-bar-end-color']: { control: 'color' },
-    ['--wc-vc-progress-bar-width']: { control: 'text' },
-    ['--wc-vc-progress-bar-height']: { control: 'text' },
+    percentage: {control: 'number'},
+    ['--wc-vc-progress-bar-start-color']: {control: 'color'},
+    ['--wc-vc-progress-bar-end-color']: {control: 'color'},
+    ['--wc-vc-progress-bar-width']: {control: 'text'},
+    ['--wc-vc-progress-bar-height']: {control: 'text'},
   },
 
   parameters: {
@@ -35,11 +36,12 @@ interface Story<T> {
   argTypes?: Record<string, unknown>;
 }
 type Props = ProgressBarProps & ProgressBarDesignTokens;
-const Template: Story<Props> = ({ percentage, ...designTokens }: Props) => {
-  
-  
-  return html`<progress-bar percentage="${percentage}" style=${styleMap(designTokens)} />`;  
-}
+const Template: Story<Props> = ({percentage, ...designTokens}: Props) => {
+  return html`<progress-bar
+    percentage="${percentage}"
+    style=${styleMap(designTokens)}
+  />`;
+};
 
 export const Default = Template.bind({});
 
@@ -47,8 +49,8 @@ Default.args = {
   percentage: 80,
 };
 Default.argTypes = {
-  percentage: { control: 'number' },
-}
+  percentage: {control: 'number'},
+};
 
 export const CustomDimension = Template.bind({});
 CustomDimension.args = {
@@ -56,7 +58,6 @@ CustomDimension.args = {
   ['--wc-vc-progress-bar-height']: '6px',
   ['--wc-vc-progress-bar-width']: '400px',
 };
-
 
 export const CustomTheme = Template.bind({});
 CustomTheme.args = {

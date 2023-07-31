@@ -1,7 +1,7 @@
-import {ProgressBar} from '../progress-bar';
-
-import {fixture, assert} from '@open-wc/testing';
+import {assert, fixture} from '@open-wc/testing';
 import {html} from 'lit/static-html.js';
+
+import {ProgressBar} from '../progress-bar';
 
 suite('progress-bar', () => {
   test('is defined', () => {
