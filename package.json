@@ -1,6 +1,6 @@
 {
   "name": "wc-progress-bar",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Progress bar web component",
   "main": "./dist/progress-bar.js",
   "module": "./dist/progress-bar.js",
@@ -55,6 +55,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@babel/core": "^7.21.0",
+    "@changesets/cli": "^2.26.2",
     "@custom-elements-manifest/analyzer": "^0.6.3",
     "@open-wc/testing": "^3.1.5",
     "@rollup/plugin-node-resolve": "^13.3.0",

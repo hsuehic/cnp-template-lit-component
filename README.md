@@ -1,4 +1,4 @@
-# cnp-template-lit-component
+<!--instructions-of-template--># cnp-template-lit-component
 
 > A bolierplate for creating [lit](https://github.com/lit/lit) component with typescript, storybook;
 >
@@ -14,7 +14,7 @@ npm run storybook
 ```
 
 ![demo](assets/demo.png)
-
+<!--instructions-of-template-->
 # WC-PROGRESS-BAR
 
 [![npm version](https://img.shields.io/npm/v/wc-progress-bar.svg)](https://www.npmjs.com/package/wc-progress-bar)
@@ -22,6 +22,7 @@ npm run storybook
 [![Testing](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/test.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/test.yaml/badge.svg?branch=main)
 [![Linting](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/lint.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/lint.yaml/badge.svg?branch=main)
 [![Pages](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/pages.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/pages.yaml/badge.svg?branch=main)
+[![Release](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/release.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/release.yaml/badge.svg?branch=main)
 
 A Web Component for displaying progress. Please check [Demos](https://hsuehic.github.io/cn-template-lit-component/).
 
