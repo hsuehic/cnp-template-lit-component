@@ -1,6 +1,6 @@
 {
   "name": "wc-progress-bar",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Progress bar web component",
   "main": "./dist/progress-bar.js",
   "module": "./dist/progress-bar.js",

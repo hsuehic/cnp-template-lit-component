@@ -15,14 +15,16 @@ npm run storybook
 
 ![demo](assets/demo.png)
 <!--instructions-of-template-->
-# WC-PROGRESS-BAR
+# my-package-name
 
-[![npm version](https://img.shields.io/npm/v/wc-progress-bar.svg)](https://www.npmjs.com/package/wc-progress-bar)
-[![Downloads/month](https://img.shields.io/npm/dm/wc-progress-bar.svg)](http://www.npmtrends.com/wc-progress-bard)
-[![Testing](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/test.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/test.yaml/badge.svg?branch=main)
-[![Linting](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/lint.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/lint.yaml/badge.svg?branch=main)
-[![Pages](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/pages.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/pages.yaml/badge.svg?branch=main)
-[![Release](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/release.yaml/badge.svg)](https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/release.yaml/badge.svg?branch=main)
+[![npm package][npm-img]][npm-url]
+[![Downloads][downloads-img]][downloads-url]
+[![Lint Status][lint-img]][lint-url]
+[![Test Status][test-img]][test-url]
+[![Build Status][build-img]][build-url]
+[![Release Status][release-img]][release-url]
+[![Issues][issues-img]][issues-url]
+[![Code Coverage][codecov-img]][codecov-url]
 
 A Web Component for displaying progress. Please check [Demos](https://hsuehic.github.io/cn-template-lit-component/).
 
@@ -30,7 +32,7 @@ A Web Component for displaying progress. Please check [Demos](https://hsuehic.gi
 
 ```bash
 
-npm i wc-progress-bar
+npm i my-package-name
 
 ```
 
@@ -106,3 +108,22 @@ TSConfig: `useDefineForClassFields`
 - storybook-design-token postcss
   Need to obviously install the dependencies
   <https://stackoverflow.com/questions/72272219/stylelint-gives-error-class-extends-value-undefined-is-not-a-constructor-or-nul>
+
+<!--badge-variables-->
+[lint-img]: https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/lint.yaml/badge.svg
+[lint-url]: https://github.com/hsuehic/cnp-template-lit-component/workflows/lint.yaml
+[test-img]: https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/test.yaml/badge.svg
+[test-url]: https://github.com/hsuehic/cnp-template-lit-component/workflows/test.yaml
+[build-img]: https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/build.yaml/badge.svg
+[build-url]: https://github.com/hsuehic/cnp-template-lit-component/workflows/build.yaml
+[release-img]: https://github.com/hsuehic/cnp-template-lit-component/actions/workflows/release.yaml/badge.svg
+[release-url]: https://github.com/hsuehic/cnp-template-lit-component/workflows/release.yaml
+[downloads-img]: https://img.shields.io/npm/dt/cnp-template-lit-component
+[downloads-url]: https://www.npmtrends.com/cnp-template-lit-component
+[npm-img]: https://img.shields.io/npm/v/cnp-template-lit-component
+[npm-url]: https://www.npmjs.com/package/cnp-template-lit-component
+[issues-img]: https://img.shields.io/github/issues/hsuehic/cnp-template-lit-component
+[issues-url]: https://github.com/hsuehic/cnp-template-lit-component/issues
+[codecov-img]: https://codecov.io/gh/hsuehic/cnp-template-lit-component/branch/main/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/hsuehic/cnp-template-lit-component
+<!--badge-variables-->
